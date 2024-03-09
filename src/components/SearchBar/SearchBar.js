@@ -6,9 +6,14 @@ function SearchBar (props) {
   const [term, setTerm] = useState("");
 
   const passTerm = () => {
-    props.onSearch(term);
+    if(term.length > 0) {
+      props.onSearch(term);
+    } else {
+      alert("Field is empty.");
+    }
+    
   }
-
+  
   const handleTermChange = (event) => {
     setTerm(event.target.value);
   }
