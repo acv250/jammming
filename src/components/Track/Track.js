@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Track.module.css";
-import { render } from "@testing-library/react";
 
 function Track (props) {
 
